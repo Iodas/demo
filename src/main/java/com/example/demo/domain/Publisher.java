@@ -18,6 +18,9 @@ public class Publisher {
     private String state;
     private Long zip;
 
+    public Publisher() {
+    }
+
     public Publisher(String name, String addressLine, String city, String state, Long zip) {
         this.name = name;
         this.addressLine = addressLine;
