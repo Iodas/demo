@@ -41,7 +41,7 @@ public class BootStrapData implements CommandLineRunner {
         publisherRepository.save(publisher);
 
         Author rod = new Author("Commit to feature to create conflict", "Johnson");
-        Book noEJB = new Book("Unaffiliated commit on feature branch", "54528754545");
+        Book noEJB = new Book("Unaffiliated commit for merge", "54528754545");
         rod.getBooks().add(noEJB);
         noEJB.getAuthors().add(rod);
 
